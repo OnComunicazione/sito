@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS Document */
+
+svg{
+	height:auto;
+	max-width:1850px;
+	width:100%;
+	padding:130px 20px;
+	background: rgb(252,252,252); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(221,221,221,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*#network {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1200;
+    animation: loop 20s linear forwards;
+    -webkit-animation: loop 20s ease-out forwards;
+}*/
+
+#network {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 600;
+    animation: loop2 50s linear infinite;
+    -webkit-animation: loop2 50s linear infinite;
+}
+
+
+
+@-webkit-keyframes on {
+	
+	0%{opacity: 0;}
+ 100%{opacity: 1;}
+ 
+}
+
+
+
+#network ellipse{
+    stroke-dasharray: 8000;
+    stroke-dashoffset: 20;
+    animation: ellipse 10s linear forwards;
+    -webkit-animation: ellipse 10s linear forwards;
+}
+
+
+#network2{
+
+	stroke-dasharray: 50;
+    stroke-dashoffset: 300;
+    animation: loop2 50s linear infinite;
+    -webkit-animation: loop2 50s linear infinite;
+
+}
+
+
+
+/*network*/
+
+@keyframes loop {	
+ 
+	0%{stroke-dashoffset: 1300;}
+ 100%{stroke-dashoffset: 0;}
+ 
+}
+
+@-webkit-keyframes loop {
+	
+	0%{stroke-dashoffset: 1300;}
+ 100%{stroke-dashoffset: 0;}
+}
+
+
+
+
+
+
+/*ellipse*/
+
+@keyframes ellipse {	
+ 
+		0%{stroke-dashoffset: -6000;}
+ 100%{stroke-dashoffset: 5000;}
+ 
+}
+
+@-webkit-keyframes ellipse {
+	
+	0%{stroke-dashoffset: -6000;}
+ 100%{stroke-dashoffset: 6000;}
+}
+
+
+
+/*network 2*/
+
+@keyframes loop2 {	
+ 
+	0%{stroke-dashoffset: 6000;}
+ 100%{stroke-dashoffset: 0;}
+ 
+}
+
+@-webkit-keyframes loop2 {
+ 
+0%{stroke-dashoffset: 6000;}
+ 100%{stroke-dashoffset: 0;}
+ 
+}
+
+
+
+g#WEB {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s ease-out forwards;
+    -webkit-animation: scala 1s ease-out forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 0.3s;
+}
+
+
+g#RADIO {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 0.8s;
+}
+
+g#ATL {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 2.2s;
+}
+
+g#VIDEO {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1.7s;
+}
+
+g#DIRECT_MARK {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1.8s;
+}
+
+g#EVENTS {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+}
+
+g#BTL {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1.2s;
+}
+
+g#SOCIAL {
+    transform: scale(0);
+    transform-origin: center;
+	animation: scala 1s linear forwards;
+    -webkit-animation: scala 1s linear forwards;
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 0.4s;
+}
+
+
+
+@keyframes scala {	
+ 
+	0%{transform: scale(0);}
+ 25%{transform: scale(0.8);}
+ 50%{transform: scale(1.3);}
+ 75%{transform: scale(1.1);}
+ 100%{transform: scale(1);}
+ 
+}
+
+@-webkit-keyframes scala {
+ 
+	0%{transform: scale(0);}
+ 25%{transform: scale(0.8);}
+ 50%{transform: scale(1);}
+ 75%{transform: scale(1.1);}
+ 100%{transform: scale(1);}
+ 
+}

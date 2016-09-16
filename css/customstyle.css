@@ -16,10 +16,22 @@ body{
 
 /*NAVBAR*/
 
+/* */
+
+#menu-main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+
 .navbar-inverse {
     background-color: #fff;
     border-color: #ccc;
 }
+
+
 
 .navbar-brand{
 	background-image:url('../img/navlogo.png');

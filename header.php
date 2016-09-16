@@ -37,7 +37,6 @@
 <body id="wrapper">
 
 
-
  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -54,7 +53,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
-				<?php wp_nav_menu(); ?>
+				<?php wp_nav_menu( array(
+                        'menu'  => 'main',
+                        'menu_class'  => 'nav navbar-nav',
+                ) );
+                ?>
 
                 <!--<ul class="nav navbar-nav">
                     <li>

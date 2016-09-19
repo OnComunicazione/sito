@@ -1,6 +1,14 @@
 
 <?php wp_footer(); ?>
 
+<?php
+
+$args = array(
+	'page_id' => '24'
+);
+
+$the_query = new WP_Query( $args );
+if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
 
 
     	<div class="container">
@@ -8,7 +16,7 @@
             <div class="row">
 
                     <div class="col-sm-6 text-center topfoot">
-                        <p><i class="fa fa-phone"></i> 02 45487150</p>
+                        <p><i class="fa fa-phone"></i> <?php the_field('telefono'); ?></p>
                         <p><i class="fa fa-fax"></i> 02 70606157</p>
                     </div>
                     <div class="col-sm-6 text-center topfoot">
@@ -28,9 +36,13 @@
                     <div class="circleicon"><i class="fa fa-google-plus"></i></div>
                 </div>
              </div>
-
+         
 
          </div>
+
+         <?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
 
     <!-- /.container -->
 
@@ -93,6 +105,7 @@
       'maxHeight':1000
     })
 </script>
+
 </body>
 
 </html>

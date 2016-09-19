@@ -28,7 +28,7 @@
 <!-- Lightbox -->
 
      <link href="<?php echo get_bloginfo('template_url'); ?>/lightbox/css/lightbox.css" type="text/css" rel="stylesheet"/>
-    
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,20 +65,7 @@
                 ) );
                 ?>
 
-                <!--<ul class="nav navbar-nav">
-                    <li>
 
-                        <a href="works.html">CASA2</a>
-
-                    </li>
-                    <li>
-                        <a href="about.html">ABOUTS</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">CONTACTS</a>
-                    </li>-->
-
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>

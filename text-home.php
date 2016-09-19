@@ -1,15 +1,27 @@
  
-    <div class="container">
+<?php 
+
+$args = array(
+	'p' => '19'
+);
+
+$the_query = new WP_Query( $args );
+if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
+
+
+  <div class="container">
 
         <div class="row">
         	<div class="col-sm-12 text-box">
-            	<h4><span class="green">Siamo ON dal 2001.</span>Oggi ancor più di allora pensiamo che essere dei comunicatori significhi 
-pensare mixando culture diverse, attingendo al passato per guardare al futuro.
-Tanti input, un solo dictat: prendere solo il meglio da ogni forma espressiva aggiungendo quel quid che dà luogo a qualcosa di nuovo e inaspettato in uno scenario che cambia di continuo, 
-che è sempre più multidimensionale e cross mediale, dove la parola d’ordine è contaminazione 
-per creare idee funzionali al business dei nostri clienti.</h4><h2><span class="green">Siamo ON. Switch ON!</span></h2>
+            	
+    		 	<h4><?php the_content(); ?></h4>
+				<h2><span class="green"><?php the_title(); ?></span></h2>
+
         	</div>
         </div>
-        
+  </div>      
 
-    </div>
+
+<?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>	

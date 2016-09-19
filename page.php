@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post();
 $categories = get_the_category();
+if($categories){
 $currentCategory = $categories[0] -> name;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full');
-
+} else{
+$currentCategory = '';
+}
 ?>
 
 <div class="container-fluid">

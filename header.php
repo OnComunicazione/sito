@@ -18,12 +18,18 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <!-- Custom CSS -->
-    <link href="<?php echo get_bloginfo('template_url'); ?>/css/customstyle.css" type="text/css" rel="stylesheet"/>
+
     <link href="<?php echo get_bloginfo('template_url'); ?>/css/svg.css" type="text/css" rel="stylesheet"/>
-    
+
     <link href="<?php echo get_bloginfo('template_url'); ?>/css/mediaquery.css" type="text/css" rel="stylesheet"/>
      <link href="<?php echo get_bloginfo('template_url'); ?>/style.css" type="text/css" rel="stylesheet"/>
+     <link href="<?php echo get_bloginfo('template_url'); ?>/css/customstyle.css" type="text/css" rel="stylesheet"/>
+
+<!-- Lightbox -->
+
+     <link href="<?php echo get_bloginfo('template_url'); ?>/lightbox/css/lightbox.css" type="text/css" rel="stylesheet"/>
     
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -52,7 +58,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
+
 				<?php wp_nav_menu( array(
                         'menu'  => 'main',
                         'menu_class'  => 'nav navbar-nav',
@@ -71,7 +77,7 @@
                     <li>
                         <a href="contact.html">CONTACTS</a>
                     </li>-->
-                    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

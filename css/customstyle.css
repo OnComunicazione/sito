@@ -16,14 +16,28 @@ body{
 
 /*NAVBAR*/
 
-/* */
+/* Modfiche */
 
 #menu-main {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-
 }
+
+
+h4 p {
+  font-size: 23px;
+    line-height: 30px;
+    font-weight:100;
+    margin-bottom: 0;
+}
+
+h4 p strong{
+color: #9ac137;
+    font-weight: 400;
+}
+
+/* fine Modfiche */
 
 
 .navbar-inverse {

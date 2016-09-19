@@ -59,20 +59,7 @@
                 ) );
                 ?>
 
-                <!--<ul class="nav navbar-nav">
-                    <li>
-
-                        <a href="works.html">CASA2</a>
-
-                    </li>
-                    <li>
-                        <a href="about.html">ABOUTS</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">CONTACTS</a>
-                    </li>-->
-                    
-                </ul>
+         
             </div>
             <!-- /.navbar-collapse -->
         </div>

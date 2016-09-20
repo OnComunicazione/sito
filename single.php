@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if(have_posts()) : while(have_posts()) : the_post();
-$categories = get_the_category();
+$categories = get_the_category($post->ID);
 $currentCategory = $categories[0] -> name;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full');
 $immagine1 = get_field('immagine1');
@@ -8,6 +8,7 @@ $immagine2 = get_field('immagine2');
 $immagine3 = get_field('immagine3');
 $immagine4 = get_field('immagine4');
 ?>
+
 
 <div class="container-fluid">
 

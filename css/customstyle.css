@@ -145,7 +145,7 @@ a.selected{
 	position:relative;
 	background-size:cover;
 	background-position:center;
-	
+
 }
 
 .col-xs-6.col-sm-3.project-img{
@@ -250,10 +250,10 @@ a.selected{
 .lb-data .lb-close {
     display: block;
     float: right;
-    min-width: 30px; 
-    min-height: 30px; 
+    min-width: 30px;
+    min-height: 30px;
     background: url(../img/close.png) center no-repeat;
-    text-align: center; 
+    text-align: center;
     filter: none;
     opacity: 1;
 	-webkit-transition: opacity .2s;
@@ -307,11 +307,11 @@ a.selected{
 }
 
 .whitelogos{
-	background-image:url('../img/logoclient/clients.png');	
+	background-image:url('../img/logoclient/clients.png');
 }
 
 .greylogos{
-	background-image:url('../img/logoclient/logoclientgrey.png');	
+	background-image:url('../img/logoclient/logoclientgrey.png');
 }
 
 
@@ -351,7 +351,7 @@ img.foot-logo {
 	margin-left:-1050px;
 	top:48%;
 	margin-top:-1050px;
-	
+
 }
 
 
@@ -473,7 +473,7 @@ img.foot-logo {
     z-index: -1;
 	filter:blur(2px);
     -webkit-filter: blur(2px);
-    left: 50%;    
+    left: 50%;
 }
 
 .team-small .shadow{
@@ -490,7 +490,7 @@ img.foot-logo {
 #map {
     width: 100%;
     height: 398px;
-    
+
     overflow: hidden;
 }
 

@@ -16,11 +16,11 @@ if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the
 
                     <div class="col-sm-6 text-center topfoot">
                         <p><i class="fa fa-phone"></i> <?php the_field('telefono'); ?></p>
-                        <p><i class="fa fa-fax"></i> 02 70606157</p>
+                        <p><i class="fa fa-fax"></i> <?php the_field('fax'); ?></p>
                     </div>
                     <div class="col-sm-6 text-center topfoot">
-                    <p><i class="fa fa-map-marker"></i> Via Plinio 73 - 20129 Milano</p>
-                    <p><i class="fa fa-envelope"></i> agenzia@on-comunicazione.it</p>
+                    <p><i class="fa fa-map-marker"></i> <?php the_field('indirizzo'); ?></p>
+                    <p><i class="fa fa-envelope"></i> <?php the_field('mail'); ?></p>
                     </div>
 
              </div>

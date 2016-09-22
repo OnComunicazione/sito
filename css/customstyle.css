@@ -37,6 +37,10 @@ color: #9ac137;
     font-weight: 400;
 }
 
+.nf-field-label {
+    display:none;
+}
+
 /* fine Modfiche */
 
 
@@ -61,6 +65,11 @@ color: #9ac137;
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #99C038;
+}
+
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover .icon-bar{
+    background-color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
@@ -519,8 +528,18 @@ img.foot-logo {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-
+/*
 button.btn.btn-default {
+    width: 200px;
+    float: right;
+    color: #fff;
+    background-color: #9C3;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+*/
+
+.btn.btn-default {
     width: 200px;
     float: right;
     color: #fff;

@@ -3955,7 +3955,7 @@ p > video {
 
 
 /**
- * 5.0 - Forms
+ * 5.0 - Forms modifiche 
  */
  form {
      margin-top: -50px;
@@ -4037,7 +4037,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 .nf-field-element {
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .nf-form-fields-required {
@@ -4059,15 +4059,15 @@ input[type="search"],
 input[type="tel"],
 input[type="number"],
 textarea {
-	background: #f7f7f7;
+	background: #ffffff;
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-	border: 1px solid #d1d1d1;
+	border: 1px solid #9C3;
 	border-radius: 5px;
 	color: #9B9C9E;
 	padding: 0.625em 0.4375em;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 input[type="text"]:focus,
@@ -4083,7 +4083,7 @@ textarea:focus {
 	color: #1a1a1a;
 	outline: 0;
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .nf-field-label {
@@ -4161,4 +4161,19 @@ input[type="search"].search-field {
 	right: 0;
 	top: 0;
 	width: 42px;
+}
+
+.x{
+	display: inline-block;
+	clear:none!important;
+	margin-bottom: 0em!important;
+}
+
+.form-group{
+	padding:5px;
+	margin-bottom: 0px;
+}
+
+.nf-after-form-content {
+    margin-top: -40px;
 }

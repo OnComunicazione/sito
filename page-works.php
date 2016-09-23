@@ -82,7 +82,7 @@ if($the_query->have_posts()) :
 </g>
 </svg>
                     	<p class="green"><?php the_category(); ?></p>
-                    	<h1><?php the_title(); ?></h1>
+                    	<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
                     </div>
                 </div>
 

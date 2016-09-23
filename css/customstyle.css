@@ -24,7 +24,6 @@ body{
     text-transform: uppercase;
 }
 
-
 h4 p {
   font-size: 23px;
     line-height: 30px;
@@ -95,8 +94,8 @@ a.selected{
 /*MAIN IMG*/
 
 .row.mainimg {
-    height: 700px;
-    overflow: hidden;
+  /*height: 700px;*/
+  overflow: hidden;
 	text-align:center;
 	background-color:#EFEFEF;
 }
@@ -198,7 +197,6 @@ a.selected{
 	cursor:pointer;
 }
 
-
 .labels:hover{
 	background-color:#A4C63C;
 	fill:#fff;
@@ -210,10 +208,12 @@ a.selected{
 	cursor:pointer;
 }
 
-.labels:hover p a, .labels:hover h1 a{
+.labels:hover p a, .labels:hover h1 a, .labels:hover a{
     color:#fff;
     cursor:pointer;
 }
+
+
 
 .labels:hover .triangle-up{
 	border-bottom: 30px solid #A4C63c;
@@ -512,7 +512,6 @@ img.foot-logo {
 #map {
     width: 100%;
     height: 398px;
-
     overflow: hidden;
 }
 
@@ -574,6 +573,17 @@ button.btn.btn-default {
 	/*text-decoration:none;*/
 }
 
+ul.post-categories{
+	list-style: none;
+	margin:0;
+}
+
+.green ul.post-categories li a{
+
+font-size: 20px;
+    margin: 0;
+    font-weight: 100;
+}
 
 h1,h2,h3,h4{
 	color:#9B9C9E;

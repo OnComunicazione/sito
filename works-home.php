@@ -33,8 +33,6 @@ $link1 = get_permalink($box1 -> ID);
 $link2 = get_permalink($box2 -> ID);
 $link3 = get_permalink($box3 -> ID);
 
-
-
 // Get the ID of a given category
 $category_id1 = get_cat_ID( $category1 );
 $category_id2 = get_cat_ID( $category2 );
@@ -43,7 +41,6 @@ $category_id3 = get_cat_ID( $category3 );
 $category_link1 = get_category_link( $category_id1 );
 $category_link2 = get_category_link( $category_id2 );
 $category_link3 = get_category_link( $category_id3 );
-
 
 endwhile;
 endif;

@@ -1,6 +1,10 @@
-
-    
+   
 <?php
+
+
+ /*
+Template Name: contact-home
+*/
 
 $args = array(
     'page_id' => '24'

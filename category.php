@@ -1,18 +1,27 @@
- 
- <?php
 
- /*
-Template Name: Archives
-*/
+ <?php  get_header();?>
 
-  get_header();?>
+<?php
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+$args2 = array(
+	'post_type' => 'post'
+);
 
+$the_query1 = new WP_Query( $args2);
+if($the_query1->have_posts()) : while($the_query1->have_posts()) : $the_query1->the_post();
 
+?>
 
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>	
-						
+<?php endif; ?>
+
+
+<?php print_r($the_query1);?>
+
+
+
+
+
+ <?php  get_footer();?>

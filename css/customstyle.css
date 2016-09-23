@@ -210,6 +210,11 @@ a.selected{
 	cursor:pointer;
 }
 
+.labels:hover p a, .labels:hover h1 a{
+    color:#fff;
+    cursor:pointer;
+}
+
 .labels:hover .triangle-up{
 	border-bottom: 30px solid #A4C63c;
 	cursor:pointer;
@@ -227,6 +232,14 @@ a.selected{
 	color:#6f7072;
     margin: 5px 0;
     font-weight: 100;
+}
+
+.labels h1 a {
+    font-size: 40px;
+    color: #6f7072;
+    margin: 5px 0;
+    font-weight: 100;
+    /*text-decoration: none;*/
 }
 
 .triangle-up {
@@ -555,6 +568,12 @@ button.btn.btn-default {
 	color:#9ac137;
 	font-weight:400;
 }
+
+.green a{
+	color:#9ac137;
+	/*text-decoration:none;*/
+}
+
 
 h1,h2,h3,h4{
 	color:#9B9C9E;

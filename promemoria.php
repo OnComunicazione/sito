@@ -30,7 +30,8 @@ if($the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the
 <?php print_r($image2); ?> 
 
 
-
+ <!--
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>-->
 
 
 

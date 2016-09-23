@@ -1,4 +1,4 @@
- 
+
  <?php
 
  /*
@@ -7,7 +7,7 @@ Template Name: page-works
 
   get_header();?>
 
-<?php 
+<?php
 
 $args = array(
 	'post_type' => 'post'
@@ -18,20 +18,17 @@ $dimensione_box = 'col-sm-4 project-box';
 $the_query = new WP_Query( $args );
 if($the_query->have_posts()) :
  while($the_query->have_posts()) :
-  $the_query->the_post(); 
+  $the_query->the_post();
   $image = wp_get_attachment_image_src( get_post_thumbnail_id(  $attachment_id  ), 'full');
 
 
-	if($indice == 0){ 
+	if($indice == 0){
 		$dimensione_box = 'col-sm-12 main-project-box';
-	}else{ 
+	}else{
 		$dimensione_box = 'col-sm-4 project-box';
 	}
 
 ?>
-
-
-
 
 
          	<div class="col-xs-12 <?php echo $dimensione_box; ?>" style="background-image:url('<?php echo $image[0]; ?>');">
@@ -85,19 +82,18 @@ if($the_query->have_posts()) :
 </g>
 </svg>
                     	<p class="green"><?php the_category(); ?></p>
-                    	<h1><?php echo the_title(); ?></h1>  
+                    	<h1><?php the_title(); ?></h1>
                     </div>
                 </div>
 
 
 
 
-<?php 
+<?php
 
 $indice++;
  endwhile;   else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>	
+<?php endif; ?>
 
 <?php get_footer(); ?>
-						

@@ -1,13 +1,13 @@
  <?php get_header(); ?>
 
-<?php 
+<?php
 
 $args1 = array(
 	'page_id' => '44'
 );
 
 $the_query1 = new WP_Query( $args1 );
-if($the_query1->have_posts()) : while($the_query1->have_posts()) : $the_query1->the_post(); 
+if($the_query1->have_posts()) : while($the_query1->have_posts()) : $the_query1->the_post();
 $box1 = get_field('feature_box1');
 $box2 = get_field('feature_box2');
 $box3 = get_field('feature_box3');
@@ -29,19 +29,40 @@ $category2 = $categories2[0] -> name;
 $categories3 = get_the_category($box3 -> ID);
 $category3 = $categories3[0] -> name;
 
+$link1 = get_permalink($box1 -> ID);
+$link2 = get_permalink($box2 -> ID);
+$link3 = get_permalink($box3 -> ID);
+
+
+
+// Get the ID of a given category
+$category_id1 = get_cat_ID( $category1 );
+$category_id2 = get_cat_ID( $category2 );
+$category_id3 = get_cat_ID( $category3 );
+// Get the URL of this category
+$category_link1 = get_category_link( $category_id1 );
+$category_link2 = get_category_link( $category_id2 );
+$category_link3 = get_category_link( $category_id3 );
+
 
 endwhile;
 endif;
-
 
 ?>
 
 
 
 
- 
+
+
+
+
+<!-- Print a link to this category -->
+
+
+
     <div class="container-fluid">
-    
+
     	<div class="row">
         	<div class="col-sm-12">
             	<div class="col-xs-12 col-sm-4 project-box" style="background-image:url('<?php echo $image1[0]; ?>');">
@@ -89,13 +110,13 @@ endif;
 </g>
 <g>
 </g>
-<g>
+<g
 </g>
 <g>
 </g>
 </svg>
-                    	<p class="green"><?php echo $category1; ?></p>
-                    	<h1><?php echo $title1; ?></h1>  
+                    	<p class="green"><a href="<?php  echo esc_url($category_link1); ?>"><?php echo $category1; ?></a></p>
+                    	<h1><a href=""><a href="<?php  echo esc_url($link1); ?>"><?php echo $title1; ?></a></h1>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 project-box" style="background-image:url('<?php echo $image2[0]; ?>')">
@@ -148,14 +169,14 @@ endif;
 <g>
 </g>
 </svg>
-                    	<p class="green"><?php echo $category2; ?></p>
-                    	<h1><?php echo $title2; ?></h1>  
+                    	<p class="green"><a href="<?php  echo esc_url($category_link2); ?>"><?php echo $category2; ?></a></p>
+                    	<h1><a href="<?php  echo esc_url($link2); ?>"><?php echo $title2; ?></a></h1>
                     </div>
                 </div>
 
 
 
-                
+
                 <div class="col-xs-12 col-sm-4 project-box" style="background-image:url('<?php echo $image3[0]; ?>');">
                 	<div class="labels">
                     <div class="triangle-up"></div>
@@ -206,14 +227,11 @@ endif;
 <g>
 </g>
 </svg>
-                    	<p class="green"><?php echo $category3; ?></p>
-                    	<h1><?php echo $title3; ?></h1>  
+                    	<p class="green"><a href="<?php  echo esc_url($category_link3); ?>"><?php echo $category3; ?></a></p>
+                    	<h1><?php echo $title3; ?></h1>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </div>
-
-
-			

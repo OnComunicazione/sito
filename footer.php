@@ -13,7 +13,7 @@
                     <div class="circleicon"><i class="fa fa-google-plus"></i></div>
                 </div>
              </div>
-         
+
 
          </div>
 
@@ -29,45 +29,10 @@
 
 
 
-    <script>
-    // JavaScript Document
-
-		$(window).scroll(function(){
-
-			var logoclient = $('#logoclient');
-			var trigger = $('#trigger');
-			var startanimation= $('#greenpos');
-
-			var wrapper=$('#wrapper');
-			var wrapperheight= wrapper.height();
-
-			var cima = $(document).scrollTop();
-			var base = cima + $(window).height();
-
-			var triggerCima = Math.round(trigger.offset().top);
-			var triggerBase = triggerCima + trigger.height();
-
-			if((triggerCima < base) && (triggerBase > cima)){
-				startanimation.addClass('resizing');
-				setTimeout(function(){
-				  logoclient.switchClass('whitelogos', 'greylogos');
-				}, 570);
-			}
-
-			if(wrapperheight< $(window).height()){
-				startanimation.addClass('resizing');
-				setTimeout(function(){
-				  logoclient.switchClass('whitelogos', 'greylogos');
-				}, 570);
-			}
 
 
 
-
-		});
-
-    </script>
- <script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js" type="text/javascript"> </script>
+script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js" type="text/javascript"> </script>
 
  <script>
     lightbox.option({
@@ -77,6 +42,45 @@
       'maxHeight':1000
     })
 </script>
+
+
+<script>
+// JavaScript Document
+
+$(window).scroll(function(){
+
+  var logoclient = $('#logoclient');
+  var trigger = $('#trigger');
+  var startanimation= $('#greenpos');
+
+  var wrapper=$('#wrapper');
+  var wrapperheight= wrapper.height();
+
+  var cima = $(document).scrollTop();
+  var base = cima + $(window).height();
+
+  var triggerCima = Math.round(trigger.offset().top);
+  var triggerBase = triggerCima + trigger.height();
+
+  if((triggerCima < base) && (triggerBase > cima)){
+    startanimation.addClass('resizing');
+    setTimeout(function(){
+      logoclient.switchClass('whitelogos', 'greylogos');
+    }, 570);
+  }
+
+  if(wrapperheight< $(window).height()){
+    startanimation.addClass('resizing');
+    setTimeout(function(){
+      logoclient.switchClass('whitelogos', 'greylogos');
+    }, 570);
+  }
+
+
+});
+
+</script>
+
 
 </body>
 

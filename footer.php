@@ -13,7 +13,7 @@
                     <div class="circleicon"><i class="fa fa-google-plus"></i></div>
                 </div>
              </div>
-         
+
 
          </div>
 
@@ -31,7 +31,7 @@
 
     <script>
     // JavaScript Document
-
+    
 		$(window).scroll(function(){
 
 			var logoclient = $('#logoclient');
@@ -42,7 +42,7 @@
 			var wrapperheight= wrapper.height();
 
 			var cima = $(document).scrollTop();
-			var base = cima + $(window).height();
+			var base = cima + window.innerHeight;
 
 			var triggerCima = Math.round(trigger.offset().top);
 			var triggerBase = triggerCima + trigger.height();
@@ -54,7 +54,7 @@
 				}, 570);
 			}
 
-			if(wrapperheight< $(window).height()){
+			if(wrapperheight< window.innerHeight){
 				startanimation.addClass('resizing');
 				setTimeout(function(){
 				  logoclient.switchClass('whitelogos', 'greylogos');
@@ -65,6 +65,8 @@
 
 
 		});
+
+
 
     </script>
  <script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js" type="text/javascript"> </script>

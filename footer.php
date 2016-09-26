@@ -9,8 +9,8 @@
 
              <div class="row">
                 <div class="socialiconbox">
-                    <div class="circleicon"><i class="fa fa-vimeo"></i></div>
-                    <div class="circleicon"><i class="fa fa-google-plus"></i></div>
+                    <div class="circleicon"><a href="https://vimeo.com/oncomunicazionemilano" ><i class="fa fa-vimeo"></i></a></div>
+                    <div class="circleicon"><a style="text-decoration:none" href="https://plus.google.com/+On-comunicazioneIt"><i class="fa fa-google-plus"></i></a></div>
                 </div>
              </div>
 
@@ -29,12 +29,9 @@
 
 
 
+    <script>
 
 
-
-script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js" type="text/javascript"> </script>
-
- <script>
     lightbox.option({
       'resizeDuration': 800,
       'wrapAround': true,
@@ -47,7 +44,9 @@ script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js"
 <script>
 // JavaScript Document
 
+
 $(window).scroll(function(){
+
 
   var logoclient = $('#logoclient');
   var trigger = $('#trigger');
@@ -57,7 +56,7 @@ $(window).scroll(function(){
   var wrapperheight= wrapper.height();
 
   var cima = $(document).scrollTop();
-  var base = cima + $(window).height();
+  var base = cima + window.innerHeight;
 
   var triggerCima = Math.round(trigger.offset().top);
   var triggerBase = triggerCima + trigger.height();
@@ -69,7 +68,7 @@ $(window).scroll(function(){
     }, 570);
   }
 
-  if(wrapperheight< $(window).height()){
+  if(wrapperheight< window.innerHeight){
     startanimation.addClass('resizing');
     setTimeout(function(){
       logoclient.switchClass('whitelogos', 'greylogos');
@@ -78,6 +77,9 @@ $(window).scroll(function(){
 
 
 });
+
+    </script>
+ <script src="<?php echo get_bloginfo('template_url'); ?>/lightbox/js/lightbox.js" type="text/javascript"> </script>
 
 </script>
 

@@ -94,7 +94,7 @@ a.selected{
 /*MAIN IMG*/
 
 .row.mainimg {
-  /*height: 700px;*/
+	height: 700px;
   overflow: hidden;
 	text-align:center;
 	background-color:#EFEFEF;
@@ -416,6 +416,9 @@ img.foot-logo {
 
 .circleicon i {
     padding: 20px;
+}
+.socialiconbox .circleicon a {
+    color: #ffffff;
 }
 
 .circleicon {
